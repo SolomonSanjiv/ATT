@@ -30,7 +30,7 @@ public class Three {
 		Select yearDropdown=new Select(driver.findElement(By.name("birthday_year")));
 		yearDropdown.selectByValue("2002");
 		Thread.sleep(500);
-		WebElement maleRadioBtn=driver.findElement(By.xpath("//*[@id=\"sex\"]"));
+		WebElement maleRadioBtn=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/form/div[1]/div[4]/span/span[2]/label/input"));
 		maleRadioBtn.click();
 		Thread.sleep(500);
 		WebElement signUpBtn=driver.findElement(By.name("websubmit"));
