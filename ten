@@ -8,10 +8,11 @@ public class Ten {
 	public static void main(String[] args)throws InterruptedException{
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://workspace.google.com/intl/en-US/gmail/");
-		Thread.sleep(200);
+		Thread.sleep(2000);
+		driver.manage().window().maximize();
 		WebElement createAccount=driver.findElement(By.xpath("//*[@id=\"m2\"]/div/div/div[1]/div[2]/div/gws-dropdown-button/div[2]"));
 		createAccount.click();
-		Thread.sleep(200);
+		Thread.sleep(2000);
 		WebElement mySelf=driver.findElement(By.xpath("//*[@id=\"m2\"]/div/div/div[1]/div[2]/div/gws-dropdown-button/a[1]"));
 		mySelf.click();
 		Thread.sleep(2000);
